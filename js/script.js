@@ -1,11 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-
     const form = document.getElementById("formContato");
-
     if(form){
-
         form.addEventListener("submit", (e) => {
-
             e.preventDefault();
 
             const nome = document.getElementById("nome");
@@ -23,15 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 resposta.style.color = "red";
                 return;
             }
-
             resposta.textContent =
                 `Obrigado, ${nome.value}! Sua mensagem foi enviada com sucesso.`;
 
             resposta.style.color = "green";
-
             form.reset();
         });
-
     }
-
 });
